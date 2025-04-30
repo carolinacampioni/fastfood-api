@@ -1,0 +1,107 @@
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"code":"EAI_AGAIN","errno":-3001,"hostname":"db","level":"error","message":"Failed to start the application getaddrinfo EAI_AGAIN db","stack":"Error: getaddrinfo EAI_AGAIN db\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)","syscall":"getaddrinfo"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Failed to start the application connect ECONNREFUSED 127.0.0.1:5432","port":5432,"stack":"Error: connect ECONNREFUSED 127.0.0.1:5432\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)","syscall":"connect"}
+{"level":"error","message":"Failed to connect to the database. Please make sure PostgreSQL is running."}
+{"level":"error","message":"Failed to connect to the database. Please make sure PostgreSQL is running."}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"Database connection established successfully"}
+{"level":"info","message":"Database connection established"}
+{"level":"info","message":"Modules initialized"}
+{"level":"info","message":"FastFoodAPI rodando na porta 3000"}
+{"level":"error","message":"Failed to connect to the database. Please make sure PostgreSQL is running."}
