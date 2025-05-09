@@ -1,6 +1,6 @@
 /**
  * Product Entity
- * 
+ *
  * This is a domain entity that represents a product in our system.
  * It contains the core business logic and validation rules for products.
  */
@@ -28,15 +28,15 @@ export class Product {
   ) {
     // Validate inputs
     if (name.trim().length === 0) {
-      throw new Error('Product name cannot be empty');
+      throw new Error("Product name cannot be empty");
     }
 
     if (price <= 0) {
-      throw new Error('Product price must be greater than zero');
+      throw new Error("Product price must be greater than zero");
     }
 
     if (stock < 0) {
-      throw new Error('Product stock cannot be negative');
+      throw new Error("Product stock cannot be negative");
     }
 
     this._id = id;
@@ -90,7 +90,7 @@ export class Product {
   // Business methods
   updateName(name: string): void {
     if (name.trim().length === 0) {
-      throw new Error('Product name cannot be empty');
+      throw new Error("Product name cannot be empty");
     }
     this._name = name;
     this._updatedAt = new Date();
@@ -103,7 +103,7 @@ export class Product {
 
   updatePrice(price: number): void {
     if (price <= 0) {
-      throw new Error('Product price must be greater than zero');
+      throw new Error("Product price must be greater than zero");
     }
     this._price = price;
     this._updatedAt = new Date();
@@ -121,7 +121,7 @@ export class Product {
 
   updateStock(stock: number): void {
     if (stock < 0) {
-      throw new Error('Product stock cannot be negative');
+      throw new Error("Product stock cannot be negative");
     }
     this._stock = stock;
     this._updatedAt = new Date();
@@ -129,7 +129,7 @@ export class Product {
 
   increaseStock(quantity: number): void {
     if (quantity <= 0) {
-      throw new Error('Quantity must be greater than zero');
+      throw new Error("Quantity must be greater than zero");
     }
     this._stock += quantity;
     this._updatedAt = new Date();
@@ -137,10 +137,10 @@ export class Product {
 
   decreaseStock(quantity: number): void {
     if (quantity <= 0) {
-      throw new Error('Quantity must be greater than zero');
+      throw new Error("Quantity must be greater than zero");
     }
     if (this._stock < quantity) {
-      throw new Error('Insufficient stock');
+      throw new Error("Insufficient stock");
     }
     this._stock -= quantity;
     this._updatedAt = new Date();
@@ -157,7 +157,7 @@ export class Product {
       categoryId: this._categoryId,
       stock: this._stock,
       createdAt: this._createdAt,
-      updatedAt: this._updatedAt
+      updatedAt: this._updatedAt,
     };
   }
 
