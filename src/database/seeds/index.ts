@@ -1,6 +1,7 @@
 import { DataSource } from 'typeorm';
 import { seedCategories } from './categorySeed';
 import { seedProducts } from './productSeed';
+import { seedClients } from './clientSeed';
 
 /**
  * Run all seed functions
@@ -15,6 +16,9 @@ export const runSeeds = async (dataSource: DataSource): Promise<void> => {
     
     // Run product seeds
     await seedProducts(dataSource);
+
+    // Run client seeds
+    await seedClients(dataSource);
     
     console.log('Database seeding completed successfully');
   } catch (error) {

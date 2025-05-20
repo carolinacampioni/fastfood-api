@@ -22,7 +22,7 @@ export const AppDataSource = new DataSource({
   connectTimeoutMS: 10000
 });
 
-// Singleton instance of DataSource
+// Singleton instance of DataSource 
 let dataSource: DataSource;
 
 export const getDataSource = async (): Promise<DataSource> => {
