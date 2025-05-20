@@ -8,6 +8,7 @@ import { getDataSource } from './lib/typeorm';
 import { CategoryModule } from './modules/categories/CategoryModule';
 import { ProductModule } from './modules/products/ProductModule';
 import { runSeeds } from './database/seeds';
+import { ClientModule } from './modules/clients/ClientModule';
 
 dotenv.config();
 
@@ -54,9 +55,11 @@ async function bootstrap() {
     // Initialize modules
     const categoryModule = new CategoryModule();
     const productModule = new ProductModule();
+    const clientModule = new ClientModule();
     
     await categoryModule.initialize();
     await productModule.initialize();
+    await clientModule.initialize();
     winston.info('Modules initialized');
     
     // Setup routes

@@ -1,4 +1,4 @@
-version: '3.8'
+# version: '3.8'
 
 services:
   fastfood-api:
@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3001:3000"
     depends_on:
       - db
     environment:
@@ -21,11 +21,25 @@ services:
     networks:
       - food-network
 
+  # db:
+  #   platform: linux/amd64
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.postgres
+  #   environment:
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=postgres
+  #     - POSTGRES_DB=fastfood_db
+  #   volumes:
+  #     - db-data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+  #   networks:
+  #     - food-network
+
   db:
     platform: linux/amd64
-    build:
-      context: .
-      dockerfile: Dockerfile.postgres
+    image: postgres:15-alpine
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
@@ -36,6 +50,7 @@ services:
       - "5432:5432"
     networks:
       - food-network
+
 
 volumes:
   db-data:

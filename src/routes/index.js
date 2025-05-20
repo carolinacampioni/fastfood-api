@@ -3,6 +3,7 @@ const router = express.Router();
 const categoryController = require('../controllers/categoryController');
 const productController = require('../controllers/productController');
 const orderController = require('../controllers/orderController');
+const clientController = require('../controllers/clientsController');
 
 /**
  * @swagger
@@ -561,5 +562,130 @@ router.put('/orders/:id/status', orderController.updateOrderStatus);
  *         description: Pedido não encontrado
  */
 router.put('/orders/:id/cancel', orderController.cancelOrder);
+
+/**
+ * @swagger
+ * /clients:
+ *   get:
+ *     summary: Retorna todos os clientes
+ *     tags: [Clients]
+ *     responses:
+ *       200:
+ *         description: Lista de todos os clientes
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Client'
+ *   post:
+ *     summary: Cria um novo cliente
+ *     tags: [Clients]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - name
+ *               - cpf
+ *               - email
+ *             properties:
+ *               name:
+ *                 type: string
+ *               cpf:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *          
+ *     responses:
+ *       201:
+ *         description: Cliente criado com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Client'
+ *       400:
+ *         description: Dados inválidos
+ */
+router.get('/clients', clientController.getAllClients);
+router.post('/clients', clientController.createClient);
+
+/**
+ * @swagger
+ * /clients/{id}:
+ *   get:
+ *     summary: Retorna um cliente pelo ID
+ *     tags: [Clients]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: ID do cliente
+ *     responses:
+ *       200:
+ *         description: Detalhes do cliente
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Client'
+ *       404:
+ *         description: Cliente não encontrado
+ *   put:
+ *     summary: Atualiza um cliente
+ *     tags: [Clients]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: ID do cliente
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *               cpf:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Cliente atualizado com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Client'
+ *       404:
+ *         description: Cliente não encontrado
+ *   delete:
+ *     summary: Remove um cliente
+ *     tags: [Clients]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: ID do cliente
+ *     responses:
+ *       204:
+ *         description: Cliente removido com sucesso
+ *       404:
+ *         description: Cliente não encontrado
+ */
+router.get('/clients/:id', clientController.getClientById);
+router.put('/clients/:id', clientController.updateClient);
+router.delete('/clients/:id', clientController.deleteClient);
 
 module.exports = router;
